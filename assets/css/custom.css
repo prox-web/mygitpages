@@ -1,0 +1,13 @@
+.blank-row {
+    color:grey;
+    height:auto;
+    width:100%;
+}
+.blank-row a img {
+    float:left;
+}
+.blank-row a h1 {
+    float:right;
+    font-weight: bold;
+    color:#000;
+}
