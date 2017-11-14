@@ -25,6 +25,6 @@ $(window).on('load', function(){
             temp_table2 = temp_table2 + '<tr><td>' + (x[i].getElementsByTagName("FEATURE")[0].childNodes[0].nodeValue) + '</td><td>' + x[i].getElementsByTagName("DESCRIPTION")[0].childNodes[0].nodeValue + '</td><td>' + x[i].getElementsByTagName("STATUS")[0].childNodes[0].nodeValue + '</td></tr>';
         }
         $("#xml_div").append("<table>" + temp_table1 + "<tbody>"+ temp_table2 + "</tbody></table>");
-        alert(temp_table1 + temp_table2);
+
     }
 
