@@ -1,43 +1,28 @@
 <?xml version="1.0" ?>
 <SUBJECTS>
     <CD>
-        <NAME>Merbin Joe</NAME>
-        <TAMIL>98</TAMIL>
-        <ENGLISH>95</ENGLISH>
-        <MATHS>92</MATHS>
-        <SCIENCE>87</SCIENCE>
-        <SOCIAL>100</SOCIAL>
+        <FEATURE>DPD Predict</FEATURE>
+        <DESCRIPTION>DPD Predict feature</DESCRIPTION>
+        <STATUS>Done</STATUS>
     </CD>
     <CD>
-        <NAME>Franklin Jose</NAME>
-        <TAMIL>88</TAMIL>
-        <ENGLISH>56</ENGLISH>
-        <MATHS>99</MATHS>
-        <SCIENCE>56</SCIENCE>
-        <SOCIAL>79</SOCIAL>
+        <FEATURE>DPD Return</FEATURE>
+        <DESCRIPTION>DPD Return label</DESCRIPTION>
+        <STATUS>Done</STATUS>
     </CD>
     <CD>
-        <NAME>Rajan</NAME>
-        <TAMIL>88</TAMIL>
-        <ENGLISH>44</ENGLISH>
-        <MATHS>56</MATHS>
-        <SCIENCE>91</SCIENCE>
-        <SOCIAL>53</SOCIAL>
+        <FEATURE>DPD Parcelshop</FEATURE>
+        <DESCRIPTION>DPD Parcelshop feature</DESCRIPTION>
+        <STATUS>InDevelopment</STATUS>
     </CD>
     <CD>
-        <NAME>Mano</NAME>
-        <TAMIL>77</TAMIL>
-        <ENGLISH>64</ENGLISH>
-        <MATHS>51</MATHS>
-        <SCIENCE>28</SCIENCE>
-        <SOCIAL>98</SOCIAL>
+        <FEATURE>Table Rates</FEATURE>
+        <DESCRIPTION>Table rate feature</DESCRIPTION>
+        <STATUS>Pending</STATUS>
     </CD>
     <CD>
-        <NAME>Nishanth</NAME>
-        <TAMIL>36</TAMIL>
-        <ENGLISH>40</ENGLISH>
-        <MATHS>46</MATHS>
-        <SCIENCE>69</SCIENCE>
-        <SOCIAL>78</SOCIAL>
+        <FEATURE>Shippinglist</FEATURE>
+        <DESCRIPTION>DPD Shippinglist feature</DESCRIPTION>
+        <STATUS>Pending</STATUS>
     </CD>
 </SUBJECTS>
