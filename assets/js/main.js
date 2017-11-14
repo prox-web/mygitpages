@@ -18,13 +18,13 @@ $(window).on('load', function(){
         var temp_table1 = "";
         var temp_table2 = "";
 
-        temp_table1 = "<tableborder='1'><TR style='text-align:center;font-weight: bold;'><td>NAME</td><td>TAMIL</TD><TD>ENGLISH</TD><TD>MATHS</TD><TD>SCIENCE</TD><TD>SOC.SCIENCE</TD><TR>";
+        temp_table1 = "<thead><TR style='text-align:center;font-weight: bold;'><th>FEATURE</th><th>DESCRIPTION</th><th>STATUS</th></TR></thead>";
 
         var x = xmlDoc.getElementsByTagName("CD");
         for (i = 0; i < x.length; i++) {
-            temp_table2 = temp_table2 + '<tr><td>' + (x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue) + '</td><td>' + x[i].getElementsByTagName("TAMIL")[0].childNodes[0].nodeValue + '</td><td>' + x[i].getElementsByTagName("ENGLISH")[0].childNodes[0].nodeValue + '</td><td>' + x[i].getElementsByTagName("MATHS")[0].childNodes[0].nodeValue + '</td><td>' + x[i].getElementsByTagName("SCIENCE")[0].childNodes[0].nodeValue + '</td><td>' + x[i].getElementsByTagName("SOCIAL")[0].childNodes[0].nodeValue + '</td></tr>';
+            temp_table2 = temp_table2 + '<tr><td>' + (x[i].getElementsByTagName("FEATURE")[0].childNodes[0].nodeValue) + '</td><td>' + x[i].getElementsByTagName("DESCRIPTION")[0].childNodes[0].nodeValue + '</td><td>' + x[i].getElementsByTagName("STATUS")[0].childNodes[0].nodeValue + '</td></tr>';
         }
-        $("#xml_div").append("<table>" + temp_table1 + temp_table2 + "</table>");
+        $("#xml_div").append("<table>" + temp_table1 + "<tbody>"+ temp_table2 + "</tbody></table>");
         alert(temp_table1 + temp_table2);
     }
 
