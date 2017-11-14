@@ -1,10 +1,10 @@
 /**
  * Created by msant on 14-11-2017.
  */
-// Load the xml file using ajax
+
 $.ajax({
     type: "GET",
-    url: "progress.xml",
+    url: "something.xml",
     dataType: "xml",
     success: function (xml) {
 
