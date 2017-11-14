@@ -42,7 +42,7 @@ $(window).on('load', function(){
             $(".tab").removeClass("active");
             $(this).addClass("active");
 
-                $(".xml-content").fadeOut();
+                $(".xml-content").hide();
                 $("#xml_" + event.target.id).fadeIn();
 
         })
