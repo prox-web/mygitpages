@@ -24,6 +24,7 @@ $(window).on('load', function(){
         for (i = 0; i < x.length; i++) {
             temp_table2 = temp_table2 + '<tr><td>' + (x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue) + '</td><td>' + x[i].getElementsByTagName("TAMIL")[0].childNodes[0].nodeValue + '</td><td>' + x[i].getElementsByTagName("ENGLISH")[0].childNodes[0].nodeValue + '</td><td>' + x[i].getElementsByTagName("MATHS")[0].childNodes[0].nodeValue + '</td><td>' + x[i].getElementsByTagName("SCIENCE")[0].childNodes[0].nodeValue + '</td><td>' + x[i].getElementsByTagName("SOCIAL")[0].childNodes[0].nodeValue + '</td></tr>';
         }
-        $("#xml_div").append(temp_table1 + temp_table2 + "</table>");
+        $("#xml_div").append("<table>" + temp_table1 + temp_table2 + "</table>");
+        alert(temp_table1 + temp_table2);
     }
 
