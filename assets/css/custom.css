@@ -11,3 +11,15 @@
     font-weight: bold;
     color:#000;
 }
+.tab {
+    background: darkslategrey;
+    color:#fff;
+    border:1px groove black;
+    transition: background 0.4s;
+}
+.tab:hover{
+    background: darkred;
+}
+.tab.active{
+    background: darkred;
+}
