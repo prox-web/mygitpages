@@ -20,11 +20,17 @@ $(window).on('load', function(){
 
         temp_table1 = "<thead><TR style='text-align:center;font-weight: bold;'><th>FEATURE</th><th>DESCRIPTION</th><th>STATUS</th></TR></thead>";
 
-        var x = xmlDoc.getElementsByTagName("CD");
+        var x = xmlDoc.getElementsByTagName("TASK");
         for (i = 0; i < x.length; i++) {
             temp_table2 = temp_table2 + '<tr><td>' + (x[i].getElementsByTagName("FEATURE")[0].childNodes[0].nodeValue) + '</td><td>' + x[i].getElementsByTagName("DESCRIPTION")[0].childNodes[0].nodeValue + '</td><td>' + x[i].getElementsByTagName("STATUS")[0].childNodes[0].nodeValue + '</td></tr>';
         }
-        $("#xml_div").append("<table>" + temp_table1 + "<tbody>"+ temp_table2 + "</tbody></table>");
+        $("#xml_tasks").append("<table>" + temp_table1 + "<tbody>"+ temp_table2 + "</tbody></table>");
+
+        var x = xmlDoc.getElementsByTagName("ISSUE");
+        for (i = 0; i < x.length; i++) {
+            temp_table2 = temp_table2 + '<tr><td>' + (x[i].getElementsByTagName("FEATURE")[0].childNodes[0].nodeValue) + '</td><td>' + x[i].getElementsByTagName("DESCRIPTION")[0].childNodes[0].nodeValue + '</td><td>' + x[i].getElementsByTagName("STATUS")[0].childNodes[0].nodeValue + '</td></tr>';
+        }
+        $("#xml_issues").append("<table>" + temp_table1 + "<tbody>"+ temp_table2 + "</tbody></table>");
 
     }
 
