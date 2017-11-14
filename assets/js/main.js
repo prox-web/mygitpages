@@ -1,18 +1,19 @@
 /**
  * Created by msant on 14-11-2017.
  */
+jQuery(document).ready(function() {
+    $.ajax({
+        type: "GET",
+        url: "something.xml",
+        dataType: "xml",
+        success: function (xml) {
 
-$.ajax({
-    type: "GET",
-    url: "something.xml",
-    dataType: "xml",
-    success: function (xml) {
-
-        // Parse the xml file and get data
-        var xmlDoc = $.parseXML(xml),
-            $xml = $(xmlDoc);
-        $xml.find('category[name="My t"] logo').each(function () {
-            $("#news-container").append($(this).text() + "<br />");
-        });
-    }
+            // Parse the xml file and get data
+            var xmlDoc = $.parseXML(xml),
+                $xml = $(xmlDoc);
+            $xml.find('category[name="My t"] logo').each(function () {
+                $("#news-container").append($(this).text() + "<br />");
+            });
+        }
+    });
 });
