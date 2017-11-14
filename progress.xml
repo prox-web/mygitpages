@@ -1,0 +1,22 @@
+<contentprogramming>
+    <category name = "My t" id = "1">
+        <logo>http://123.png</logo>
+        <channel name="res" id= "1" type="ecommerce">
+            <logo>http://11.png</logo>
+            <items>
+                <item id="1">
+                    <image>http://11.jpg</image>
+                    <title>Memory Card MSMT2G</title>
+                    <details>$6.99</details>
+                    <linkurl>http://www.test.com/Sony</linkurl>
+                </item>
+                <item id="2">
+                    <image>http://i2.jpg</image>
+                    <title>Apple iPad </title>
+                    <details>$579.95</details>
+                    <linkurl>http://www.test.com/Apple</linkurl>
+                </item>
+            </items>
+        </channel>
+    </category>
+</contentprogramming>
