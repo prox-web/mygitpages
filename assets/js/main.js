@@ -2,7 +2,7 @@
  * Created by msant on 14-11-2017.
  */
 
-    $(window).load(function() {
+    $(window).ready(function() {
         retrive_xml_data();
     });
 
