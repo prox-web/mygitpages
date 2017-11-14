@@ -13,6 +13,7 @@
 }
 .tabs {
     list-style-type: none;
+    margin:0;
 }
 .tab {
     background: darkslategrey;
