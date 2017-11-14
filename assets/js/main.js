@@ -4,7 +4,7 @@
 jQuery(document).ready(function() {
     $.ajax({
         type: "GET",
-        url: "something.xml",
+        url: "progress.xml",
         dataType: "xml",
         success: function (xml) {
 
