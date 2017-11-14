@@ -11,15 +11,29 @@
     font-weight: bold;
     color:#000;
 }
+.tabs {
+    list-style-type: none;
+}
 .tab {
     background: darkslategrey;
     color:#fff;
     border:1px groove black;
     transition: background 0.4s;
+    padding:10px 0 5px 5px;
+    border-radius: 15px 15px 0 0;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
 }
 .tab:hover{
-    background: darkred;
+    background: #dc0032;
 }
 .tab.active{
-    background: darkred;
+    background: #dc0032;
+}
+.tab-content{
+    margin:0;
+    height:500px;
+    background: lightgray;
+    border:1px groove black;
 }
