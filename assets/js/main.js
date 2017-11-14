@@ -36,4 +36,15 @@ $(window).on('load', function(){
         $("#xml_issues").append("<table>" + issue_table1 + "<tbody>"+ issue_table2 + "</tbody></table>");
 
     }
+    $(document).ready(function() {
+        $("#xml_tasks").fadeIn();
+        $(".tab").click(function () {
+            $(".tab").removeClass("active");
+            $(this).addClass("active");
+
+                $(".xml-content").fadeOut();
+                $("#xml_" + event.target.id).fadeIn();
+
+        })
+    });
 

@@ -38,3 +38,6 @@
     background: lightgray;
     border:1px groove black;
 }
+.xml-content {
+    display:none;
+}
