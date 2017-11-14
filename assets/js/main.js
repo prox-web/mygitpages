@@ -1,7 +1,7 @@
 /**
  * Created by msant on 14-11-2017.
  */
-jQuery(document).ready(function() {
+
     $(window).load(function() {
         retrive_xml_data();
     });
@@ -26,4 +26,4 @@ jQuery(document).ready(function() {
         }
         $("#xml_div").append(temp_table1 + temp_table2 + "</table>");
     }
-});
+
